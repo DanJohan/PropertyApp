@@ -1,42 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context=".Activities.SignLoginActivity">
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_marginTop="100dp"
-        android:id="@+id/icon_image"
-        android:src="@drawable/logo"
-        android:layout_height="100dp" />
+    android:background="@drawable/main_background"
+    android:id="@+id/llayout2"
+    android:orientation="vertical">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_below="@+id/icon_image"
-        android:gravity="center"
-        android:layout_gravity="center"
         android:layout_height="match_parent">
-      <Button
-          android:layout_width="200dp"
-          android:background="@drawable/button_border"
-          android:text="Sign Up"
-          android:id="@+id/sign_up"
-          android:textSize="13sp"
-          android:textColor="#ffffff"
-          android:layout_height="35dp" />
-        <Button
-            android:layout_width="200dp"
-            android:background="@drawable/button_border_layout_line"
-            android:text="Sign In"
-            android:textSize="13sp"
+    <ImageView
+        android:id="@+id/img"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo" />
+        <TextView
+            android:id="@+id/tv1"
             android:layout_marginTop="10dp"
-            android:layout_below="@+id/sign_up"
-            android:textColor="#3c3c3c"
-            android:layout_height="35dp" />
-
+            android:layout_below="@+id/img"
+            android:text="KEY MORTGAGE"
+            android:gravity="center_horizontal"
+            android:textSize="40sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_below="@+id/tv1"
+            android:text="YOUR MORTGAGE MATTERS"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_below="@+id/tv2"
+            android:id="@+id/signup"
+            android:layout_marginTop="100dp"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_bg"
+            android:textSize="10sp"
+            android:textAllCaps="false"
+            android:layout_width="300dp"
+            android:layout_height="30dp" />
+        <Button
+            android:layout_below="@+id/signup"
+            android:id="@+id/login"
+            android:layout_marginTop="30dp"
+            android:text="Log In"
+            android:textColor="#0d4d6d"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/buttonwhite_bg"
+            android:textSize="10sp"
+            android:textAllCaps="false"
+            android:layout_width="300dp"
+            android:layout_height="30dp" />
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/noti_icon"
+            android:layout_height="wrap_content" />
     </RelativeLayout>
-
-
-</RelativeLayout>
+</LinearLayout>
